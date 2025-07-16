@@ -1,7 +1,7 @@
 ### Decathlon - Data Engineer Senior Freelance
-*Mai 2021 - Présent (4 ans 3 mois)*
+Mai 2021 - Présent (4 ans 3 mois)
 
-**Contexte :** Développement de la plateforme d'ingestion de Decathlon : Data Factory Ingest à l'échelle du groupe. Solution critique utilisée par 160 équipes à travers le monde, traitant 400 To quotidiens et 2000 tables ingérées quotidiennement.
+Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Factory Ingest à l'échelle du groupe. Solution critique utilisée par 160 équipes à travers le monde, traitant 400 To quotidiens et 2000 tables ingérées quotidiennement.
 
 #### Architecture et optimisation technique
 - Implémentation du back-end des ingestions Spark sur EMR avec prise de décisions architecturales
@@ -22,9 +22,9 @@
 - Implémentation d'une "Reject Table" : validation de schéma par fichier et remontée des erreurs dans une table dédiée
 - Implémentation et déploiement de tests unitaires sur l'ensemble des composants d'ingestion
 - Développement de différents modes d'ingestion :
- - **FULL** : remplacement complet des données
- - **DIFF** : ingestion incrémentale avec merge sur l'existant
- - **APPEND** : concaténation des nouveaux fichiers
+ - FULL : remplacement complet des données
+ - DIFF : ingestion incrémentale avec merge sur l'existant
+ - APPEND : concaténation des nouveaux fichiers
 
 #### Infrastructure et DevOps
 - Configuration et déploiement de Datadog pour la centralisation des logs
@@ -37,6 +37,6 @@
 - Support technique aux équipes utilisatrices dans un contexte international
 - Gestion de projets critiques avec priorisation et coordination d'équipes métiers multiples
 
-**Stack technique :** Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
+Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
 
-**Équipe :** X Data Engineers, X Front-end, X Fullstack Engineer, 1 PO, 1 Lead Tech
+Équipe : X Data Engineers, X Front-end, X Fullstack Engineer, 1 PO, 1 Lead Tech
