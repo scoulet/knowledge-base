@@ -13,7 +13,7 @@
 
 #### Sécurité et gouvernance
 - Gestion des PII : chiffrement au niveau colonne de données nestées complexes sans ajout de colonne
-- Mise en place d'une stratégie cross-cloud de chiffrement de données HR
+- Mise en place d'une stratégie cross-cloud de chiffrement de données confidentielles (Ressources Humaines)
 - Gouvernance : mapping de chaque table avec un contrat d'ingestion (idcard) paramétré via l'interface utilisateur
 
 #### Orchestration et qualité
