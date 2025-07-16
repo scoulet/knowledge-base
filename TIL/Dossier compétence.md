@@ -13,7 +13,7 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 
 #### Sécurité et gouvernance
 - Gestion des PII : chiffrement au niveau colonne de données nestées complexes sans ajout de colonne
-- Mise en place d'une stratégie cross-cloud de chiffrement de données HR
+- Mise en place d'une stratégie cross-cloud de chiffrement de données confidentielles (Ressources Humaines)
 - Gouvernance : mapping de chaque table avec un contrat d'ingestion (idcard) paramétré via l'interface utilisateur
 - Synchronisation des métadonnées Collibra vers le back-end
 
@@ -35,7 +35,7 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 - Réalisation d'un POC pour écriture dans Unity Catalog depuis EMR
 - Propositions et mise en place de stratégies de réduction de la dette technique
 - Support technique aux équipes utilisatrices dans un contexte international
-- Gestion de projets critiques avec priorisation et coordination d'équipes métiers multiples
+- Gestion de projets critiques avec priorisation et coordination d'équipes métiers
 
 Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
 
