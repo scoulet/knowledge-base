@@ -67,3 +67,39 @@ _NB : This won't work on array of struct, since this would break the "1 primary 
 
 
 ##### Example of usage
+
+```python
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, struct, max
+
+# Exemple de DataFrame avec des clés imbriquées
+data = [
+    {"id": {"a": 1, "b": "X"}, "value": 100, "update_ts": "2024-01-01"},
+    {"id": {"a": 1, "b": "X"}, "value": 200, "update_ts": "2024-01-02"},
+    {"id": {"a": 2, "b": "Y"}, "value": 300, "update_ts": "2024-01-01"}
+]
+
+df = spark.read.json(spark.sparkContext.parallelize(data))
+
+# Appelle à la fonction avec clé imbriquée "id.a" et "id.b"
+dedup_df = clean_dataframe(
+    df,
+    primary_keys=["id.a", "id.b"],
+    update_col="update_ts",
+    ordering_fields=[]
+)
+
+dedup_df.show(truncate=False)
+```
+
+This will correctly shows 
+```
++------+----------+-----+ 
+|id |update_ts |value| 
++------+----------+-----+ 
+|{1, X}|2024-01-02|200 | 
+|{2, Y}|2024-01-01|300 | 
++------+----------+-----+
+```
+
