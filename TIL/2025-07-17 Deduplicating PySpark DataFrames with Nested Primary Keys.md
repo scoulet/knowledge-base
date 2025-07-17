@@ -68,6 +68,8 @@ This snippet works by:
 3. **Grouping** by the temporary, flat primary key columns and using `max()` on the struct. Because the sorting field is the first element in the struct, `max()` correctly identifies the record with the latest value for that field among duplicates.
 4. **Expanding** the resulting struct back into individual columns and restoring the original DataFrame schema.
 
+_NB : This also works on standard _
+
 _NB : This won't work on array of struct, since this would break the "1 primary key <=> 1 row" rule (Atomicity 1NF)_
 
 
@@ -111,12 +113,12 @@ This will correctly shows
 
 ### Use Cases / When to Apply This (Business Context)
 
-This pattern is particularly useful in scenarios involving data pipelines and data processing:
+This pattern is especially useful in data engineering workflows:
 
-- **Change Data Capture (CDC) Processing:** When receiving incremental updates from a source system (e.g., a database's change log), records with the same primary key might appear multiple times with different `update_ts`. This method ensures you always pick the **latest state** of a record for your data lake or warehouse.
+- **CDC (Change Data Capture) Processing:** Efficiently selecting the **latest record state** from incremental updates.
     
-- **Ingesting Semi-Structured Logs/Events:** Logs or events often arrive in JSON-like formats where event identifiers or user IDs can be nested. If duplicate events need to be reconciled (e.g., keeping the most recent action), this pattern is ideal.
+- **Semi-structured Data Ingestion:** Deduplicating logs or events where IDs are nested, ensuring the most recent action is kept.
     
-- **Data Deduplication in Data Lakes:** Maintaining data quality in a data lake often requires removing duplicate records. This solution provides a robust way to do so, especially when dealing with complex or evolving schemas.
+- **Data Lake Deduplication:** Maintaining **data quality** by removing duplicates, particularly with complex or evolving schemas.
     
-- **Master Data Management (MDM):** In simpler MDM scenarios, when consolidating customer or product data from various sources, this logic can help determine the "golden record" based on recency or version.
+- **Master Data Management (MDM):** Identifying the **"golden record"** for entities (like customers or products) based on recency.
