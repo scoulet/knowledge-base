@@ -61,4 +61,6 @@ def deduplicate_with_sorting(df: DataFrame, key_fields: list[str], sorting_field
     return res2.select(*[col(c) for c in cols])
 ```
 
-This snippets take 
+This snippets unnest the 
+
+_NB : This won't work on array of struct, since this would break the "1 primary key <=> 1 row_
