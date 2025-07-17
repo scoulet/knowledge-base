@@ -68,9 +68,9 @@ This snippet works by:
 3. **Grouping** by the temporary, flat primary key columns and using `max()` on the struct. Because the sorting field is the first element in the struct, `max()` correctly identifies the record with the latest value for that field among duplicates.
 4. **Expanding** the resulting struct back into individual columns and restoring the original DataFrame schema.
 
-_NB : This also works on standard _
+_NB : This also works on standard primary keys at the root_
 
-_NB : This won't work on array of struct, since this would break the "1 primary key <=> 1 row" rule (Atomicity 1NF)_
+_NB2 : This won't work on array of struct, since this would break the "1 primary key <=> 1 row" rule (Atomicity 1NF)_
 
 
 ##### Example of usage
