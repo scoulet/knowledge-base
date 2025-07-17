@@ -63,7 +63,7 @@ def deduplicate_with_sorting(df: DataFrame, key_fields: list[str], sorting_field
 
 This snippet does X Y Z 
 
-_NB : This won't work on array of struct, since this would break the "1 primary key <=> 1 row" rule_
+_NB : This won't work on array of struct, since this would break the "1 primary key <=> 1 row" rule (Atomicity _
 
 
 ##### Example of usage
