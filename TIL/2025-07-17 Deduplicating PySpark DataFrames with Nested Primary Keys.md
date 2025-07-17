@@ -108,3 +108,15 @@ This will correctly shows
 +------+----------+-----+
 ```
 
+
+### Use Cases / When to Apply This (Business Context)
+
+This pattern is particularly useful in scenarios involving data pipelines and data processing:
+
+- **Change Data Capture (CDC) Processing:** When receiving incremental updates from a source system (e.g., a database's change log), records with the same primary key might appear multiple times with different `update_ts`. This method ensures you always pick the **latest state** of a record for your data lake or warehouse.
+    
+- **Ingesting Semi-Structured Logs/Events:** Logs or events often arrive in JSON-like formats where event identifiers or user IDs can be nested. If duplicate events need to be reconciled (e.g., keeping the most recent action), this pattern is ideal.
+    
+- **Data Deduplication in Data Lakes:** Maintaining data quality in a data lake often requires removing duplicate records. This solution provides a robust way to do so, especially when dealing with complex or evolving schemas.
+    
+- **Master Data Management (MDM):** In simpler MDM scenarios, when consolidating customer or product data from various sources, this logic can help determine the "golden record" based on recency or version.
