@@ -1,7 +1,7 @@
 
 ### Introduction
 
-Imagine that you have some nested data, which includes stuct ids
+Imagine that you have some semi-structured nested data, which includes stuct ids
 ```python
     {"id": {"a": 1, "b": "X"}, "value": 100, "update_ts": "2024-01-01"},
     {"id": {"a": 1, "b": "X"}, "value": 200, "update_ts": "2024-01-02"},
