@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dossier compétence.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dossier compétence"
+              "title": "Untitled"
             }
           }
         ],
@@ -202,7 +202,8 @@
   },
   "active": "2f147f0be9675ffb",
   "lastOpenFiles": [
-    "Welcome.md",
-    "Dossier compétence.md"
+    "Dossier compétence.md",
+    "Untitled.md",
+    "Welcome.md"
   ]
 }
