@@ -40,3 +40,6 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
 
 Équipe : 3 Data Engineers, 1 Front-end, 1 Fullstack Engineer, 1 PO, 1 Lead Tech
+
+
+-----
