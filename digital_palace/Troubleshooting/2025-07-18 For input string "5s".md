@@ -20,10 +20,6 @@ The root cause was that several `fs.s3a.connection` and `fs.s3a.threads` configu
 [cite_start]The fix involved explicitly setting these S3a-related configurations in **milliseconds**.  [cite_start]By overriding their default string values with numeric millisecond values, the `NumberFormatException` was resolved. 
 
 ```python
-# Assuming 'spark' is your SparkSession and 'conf' is spark.sparkContext._jconf
-# Or you can set these directly when building SparkSession:
-# SparkSession.builder.config("spark.hadoop.fs.s3a.connection.establish.timeout", "5000")
-
 conf.set("fs.s3a.connection.establish.timeout", "5000")    # 5 seconds
 conf.set("fs.s3a.connection.timeout", "200000")          # 200 seconds
 conf.set("fs.s3a.threads.keepalivetime", "60000")        # 60 seconds
