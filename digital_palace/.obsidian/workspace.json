@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dossier compétence.md",
+                "file": "TIL/Bugs resolve/2025-07-18 \"5s\".md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dossier compétence"
+              "title": "2025-07-18 \"5s\""
             }
           }
         ],
@@ -204,11 +204,13 @@
   },
   "active": "2f147f0be9675ffb",
   "lastOpenFiles": [
+    "Dossier compétence.md",
+    "TIL/Bugs resolve/2025-07-18 \"5s\".md",
+    "TIL/Bugs resolve",
     "reflexions/2025-07-18 Agents and TDD.md",
     "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
     "TIL",
     "reflexions",
-    "Dossier compétence.md",
     "Welcome.md"
   ]
 }
