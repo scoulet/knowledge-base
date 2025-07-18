@@ -15,7 +15,7 @@ The root cause was that several `fs.s3a.connection` and `fs.s3a.threads` configu
 
 
 
-### Solution B - 
+### Solution A - Override spark confs default
 
 [cite_start]The fix involved explicitly setting these S3a-related configurations in **milliseconds**.  [cite_start]By overriding their default string values with numeric millisecond values, the `NumberFormatException` was resolved. 
 
@@ -28,5 +28,6 @@ conf.set("fs.s3a.connection.establish.timeout", "5000")    # 5 seconds
 conf.set("fs.s3a.connection.timeout", "200000")          # 200 seconds
 conf.set("fs.s3a.threads.keepalivetime", "60000")        # 60 seconds
 conf.set("fs.s3a.multipart.purge.age", "86400000")       # 24 hours (24*60*60*1000 ms)
+```
 
-
+### Solution B - Check dependencies
