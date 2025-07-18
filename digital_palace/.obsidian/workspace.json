@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reflexions/Untitled.md",
+                "file": "reflexions/2025-07-18.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "2025-07-18"
             }
           }
         ],
@@ -205,7 +205,7 @@
   "active": "2f147f0be9675ffb",
   "lastOpenFiles": [
     "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
-    "reflexions/Untitled.md",
+    "reflexions/2025-07-18.md",
     "TIL",
     "reflexions",
     "Dossier compétence.md",
