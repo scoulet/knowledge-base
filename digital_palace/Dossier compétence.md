@@ -48,7 +48,7 @@ Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta 
 ### AAA-Data (Automobile) - Data Engineer
 Contexte : Migration du système d’information de prédiction on-premise vers Snowflake et observation des tendances d’achat des véhicules de marché. 
 
-Ils avaient une position de monopole depuis les années 90, car la licence ANTS coûte très chère à l'entrée (7M€ / an)
+Ils avaient une position de monopole depuis les années 90, car la licence ANTS coûte très chère à l'entrée (7M€ / an). Donc pas d'évolution de leur SI depuis => systèmes on-prem dépassés + Nouveaux entrants sur le marché qui bénéficient du cloud. Le but de la mission était de moderniser leur stack pour sécuriser leur place sur le marché
 
 
 En gros : réception du fichier du ministère (ANTS) -> Correction automatique des données (souvent écrites à la main) -> Enrichissement avec les bases (exp : modèles etc...) -> Sauvegarde en vue courante qui sert de socle aux statistiques vendues aux constructeurs, concessions auto, etc....
