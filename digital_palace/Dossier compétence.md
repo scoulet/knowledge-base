@@ -43,7 +43,10 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 
 
 ------
+### Professeur 
 
+**Data Mining, Warehouse, Viz, Big data, NoSql pour les systèmes de santé**
+---- 
 
 ### AAA-Data (Automobile) - Data Engineer
 Janvier 2020 - Mai 2021
