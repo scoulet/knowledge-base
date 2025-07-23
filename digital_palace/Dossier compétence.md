@@ -46,3 +46,7 @@ Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta 
 
 
 ### AAA-Data (Automobile) - Data Engineer
+Contexte : Migration du système d’information de prédiction on-premise vers Snowflake et observation des tendances d’achat des véhicules de marché.
+
+- 
+- Supervision de 2 data engineer junior
