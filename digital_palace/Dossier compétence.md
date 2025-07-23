@@ -37,9 +37,9 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 - Support technique aux équipes utilisatrices dans un contexte international
 - Gestion de projets critiques avec priorisation et coordination d'équipes métiers
 
-Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
+**Stack technique :** Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
 
-Équipe : 3 Data Engineers, 1 Front-end, 1 Fullstack Engineer, 1 PO, 1 Lead Tech
+**Équipe :** 3 Data Engineers, 1 Front-end, 1 Fullstack Engineer, 1 PO, 1 Lead Tech
 
 
 ------
@@ -60,4 +60,7 @@ En gros : réception du fichier du ministère (ANTS) -> Correction automatique d
 - Réduction du temps d'ingestion des données du ministère de 13h à 6 minutes
 - Jointures et correction en logique floue (fuzzy logic)
 - Agile : Temps de sprint ? 
-**Stack**
+
+**Stack technique :** 
+
+**Equipe :** : 1 PO, 1 tech-lead, 3 Data Engineers
