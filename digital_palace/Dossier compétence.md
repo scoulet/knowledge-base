@@ -45,3 +45,4 @@ Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta 
 ------
 
 
+### AAA-Data (Automobile) - Data Engineer
