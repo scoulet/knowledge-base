@@ -43,8 +43,8 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 
 
 ------
-### Professeur 
-Novembre 2022 - Présent (2 )
+### EPISEN - Professeur de Big Data en école d'ingénieur
+Novembre 2022 - Présent (2 ans )
 
 Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et du Numérique) sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSql pour les système de santé"
 
@@ -52,7 +52,9 @@ Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et d
 - 10h TP
 - Préparation des supports de cours et de TP
 - Première formation à l'écosystème big data (5V, type de données, Datalake, DWH)
-- Formation aux systèmes distribués (spark)
+- Formation et mise en pratique des systèmes distribués (spark)
+- Acculturation au streaming event-driven (kafka)
+- Introduction au data mining, les premières
 
 
 ---- 
