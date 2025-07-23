@@ -1,4 +1,4 @@
-### Decathlon - Data Engineer Senior Freelance
+### Decathlon - Senior Data Engineer - Freelance
 Mai 2021 - Présent (4 ans 3 mois)
 
 Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Factory Ingest à l'échelle du groupe. Solution critique utilisée par 160 équipes à travers le monde, traitant 400 To quotidiens et 2000 tables ingérées quotidiennement.
@@ -34,48 +34,62 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 - Définition d'une stratégie de migration metamodel Glue vers Unity Catalog
 - Réalisation d'un POC pour écriture dans Unity Catalog depuis EMR
 - Propositions et mise en place de stratégies de réduction de la dette technique
+
+#### Collaboration et méthodes
 - Support technique aux équipes utilisatrices dans un contexte international
 - Gestion de projets critiques avec priorisation et coordination d'équipes métiers
+- Organisation en agile avec sprints de 2 semaines
 
-**Stack technique :** Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
+Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta Lake, Unity Catalog, Autoloader, Python, Datadog, Collibra
 
-**Équipe :** 3 Data Engineers, 1 Front-end, 1 Fullstack Engineer, 1 PO, 1 Lead Tech
-
+Équipe : 3 Data Engineers, 1 Front-end, 1 Fullstack Engineer, 1 PO, 1 Lead Tech
 
 ------
-### EPISEN - Professeur de Big Data en école d'ingénieur
-Novembre 2022 - Présent (2 ans )
 
-Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et du Numérique) sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSql pour les système de santé"
+## EPISEN - Professeur de Big Data en école d'ingénieur - Freelance
+Novembre 2022 - Présent (2 ans 9 mois)
 
-- 10h CM
-- 10h TP
-- Préparation des supports de cours et de TP
-- Première formation à l'écosystème big data (5V, type de données, Datalake, DWH)
-- Formation et mise en pratique des systèmes distribués (spark)
-- Acculturation au streaming event-driven (kafka)
-- Introduction au data mining, les premières
+Contexte : Vacataire à l'EPISEN (École Publique d'Ingénieurs de la Santé et du Numérique), école d'ingénieurs publique de l'Université Paris-Est Créteil spécialisée dans la formation de 250 élèves ingénieurs combinant santé et numérique. Intervention sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSQL pour les systèmes de santé".
 
+#### Formation théorique et pratique
+- 10h CM : concepts fondamentaux du Big Data et écosystème technologique
+- 10h TP : mise en pratique sur des cas d'usage concrets
+- Préparation des supports de cours et de TP adaptés
+
+#### Programme pédagogique
+- Première formation à l'écosystème big data (5V, types de données, Datalake, DWH) 
+- Formation et mise en pratique des systèmes distribués (Apache Spark)
+- Acculturation au streaming event-driven (Apache Kafka)
+- Introduction au data mining
+
+Compétences développées : Pédagogie, vulgarisation technique
 
 ---- 
 
-### AAA-Data (Automobile) - Data Engineer
-Janvier 2020 - Mai 2021
+## AAA-Data (Automobile) - Data Engineer - CDI
+Janvier 2020 - Mai 2021 (1 an 5 mois)
 
-Contexte : Migration du système d’information de prédiction on-premise vers Snowflake et observation des tendances d’achat des véhicules de marché. 
+Contexte : Migration du système d'information de prédiction on-premise vers Snowflake chez AAA DATA, leader français de l'exploitation des données automobiles depuis 60 ans. Position de monopole historique (licence ANTS 7M€/an) menacée par de nouveaux entrants cloud. Objectif : moderniser la stack pour sécuriser la position marché.
 
-Ils avaient une position de monopole depuis les années 90, car la licence ANTS coûte très chère à l'entrée (7M€ / an). Donc pas d'évolution de leur SI depuis => systèmes on-prem dépassés + Nouveaux entrants sur le marché qui bénéficient du cloud. Le but de la mission était de moderniser leur stack pour sécuriser leur place sur le marché
+#### Architecture et pipeline de données
+- Supervision technique de 2 data engineers junior avec mentorat quotidien.
+- Implémentation de pipelines de traitement : 
+	- Réception fichier ministère (ANTS)
+	- Correction automatique des données manuscrites
+	- Enrichissement avec bases constructeurs
+	- Sauvegarde en vues statistiques vendues aux constructeurs et concessions automobiles.
+- Réduction drastique du temps d'ingestion des données du ministère de 13h à 6 minutes.
+- Jointures et correction en logique floue (fuzzy logic) pour réconciliation automatique de données hétérogènes.
 
+#### Collaboration et méthodes
+- Contact quotidien avec les équipes métiers pour expression de besoins et validation
+- Organisation en agile avec sprints de 2 semaines
 
-En gros : réception du fichier du ministère (ANTS) -> Correction automatique des données (souvent écrites à la main) -> Enrichissement avec les bases (exp : modèles etc...) -> Sauvegarde en vue courante qui sert de socle aux statistiques vendues aux constructeurs, concessions auto, etc....
- 
-- Supervision de 2 data engineer junior
-- Implémentation de pipeline 
-- Réduction du temps d'ingestion des données du ministère de 13h à 6 minutes
-- Jointures et correction en logique floue (fuzzy logic)
-- Contact quotidien avec les équipes métiers
-- Agile : Temps de sprint ? 
+#### Migration cloud et modernisation
+- Transition complète d'une architecture on-premise vers Snowflake sans interruption de service
+- Optimisation des performances par parallélisation des traitements
+- Réduction de la dette technique et modernisation des processus ETL
 
-**Stack technique :** 
+Stack technique : Snowflake, Python, Apache Spark, PostgreSQL, Docker, Jenkins, Fuzzy Logic (FuzzyWuzzy), Pandas, NumPy, Apache Airflow
 
-**Équipe :** 1 PO, 1 tech-lead, 3 Data Engineers
+Équipe : 1 PO, 1 Tech Lead, 3 Data Engineers
