@@ -49,7 +49,8 @@ Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et d
 - 10h CM
 - 10h TP
 - Préparation des supports de cours et de TP
-- Première formatio
+- Première formation à l'écosystème big data (Datalake, data warehouse)
+- Formation aux systèmes distribués (spark)
 
 
 
