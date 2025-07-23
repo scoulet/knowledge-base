@@ -59,8 +59,9 @@ En gros : réception du fichier du ministère (ANTS) -> Correction automatique d
 - Implémentation de pipeline 
 - Réduction du temps d'ingestion des données du ministère de 13h à 6 minutes
 - Jointures et correction en logique floue (fuzzy logic)
+- Contact quotidien avec les équipes métiers
 - Agile : Temps de sprint ? 
 
 **Stack technique :** 
 
-**Equipe :** : 1 PO, 1 tech-lead, 3 Data Engineers
+**Équipe :** 1 PO, 1 tech-lead, 3 Data Engineers
