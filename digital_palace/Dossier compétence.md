@@ -44,7 +44,9 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 
 ------
 ### Professeur 
-Contexte : Vacataire à l'EPISEN 
+Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et du Numérique) sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSql pour les système de santé"
+
+- 10
 
 
 
