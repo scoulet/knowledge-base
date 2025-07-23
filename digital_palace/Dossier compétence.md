@@ -46,7 +46,7 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 ### EPISEN - Professeur de Big Data en école d'ingénieur
 Novembre 2022 - Présent (2 ans )
 
-Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et du Numérique) sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSql pour les système de santé"
+Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et du Numérique) sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSql pour les système de santé" 
 
 - 10h CM
 - 10h TP
