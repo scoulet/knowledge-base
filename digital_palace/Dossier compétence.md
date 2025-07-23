@@ -22,9 +22,9 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 - Implémentation d'une "Reject Table" : validation de schéma par fichier et remontée des erreurs dans une table dédiée
 - Implémentation et déploiement de tests unitaires sur l'ensemble des composants d'ingestion
 - Développement de différents modes d'ingestion :
- - FULL : remplacement complet des données
- - DIFF : ingestion incrémentale avec merge sur l'existant
- - APPEND : concaténation des nouveaux fichiers
+	 - FULL : remplacement complet des données
+	 - DIFF : ingestion incrémentale avec merge sur l'existant
+	 - APPEND : concaténation des nouveaux fichiers
 
 #### Infrastructure et DevOps
 - Configuration et déploiement de Datadog pour la centralisation des logs
@@ -46,10 +46,10 @@ Stack technique : Spark, Scala, AWS (S3, EMR, Glue), Airflow, Databricks, Delta 
 
 
 ### AAA-Data (Automobile) - Data Engineer
-Contexte : Migration du système d’information de prédiction on-premise vers Snowflake et observation des tendances d’achat des véhicules de marché.
+Contexte : Migration du système d’information de prédiction on-premise vers Snowflake et observation des tendances d’achat des véhicules de marché. En gros : réception du fichier du ministère (ANTS )
  
 - Supervision de 2 data engineer junior
-- 
+- Implémentation de pipeline 
 - Réduction du temps d'ingestion des données du ministère de 13h à 6 minutes
-- Jointure et 
+- Jointure et classement en logique floue (fuzzy logic)
 - Agile : Temps de sprint ? 
