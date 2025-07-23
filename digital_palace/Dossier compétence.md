@@ -44,12 +44,14 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 
 ------
 ### Professeur 
+Novembre 2022 - Présent (2 )
+
 Contexte : Vacataire à l'EPISEN (Ecole Publique d'Ingénieurs de la Santé et du Numérique) sur l'UE "Data Mining, Warehouse, Viz, Big data, NoSql pour les système de santé"
 
 - 10h CM
 - 10h TP
 - Préparation des supports de cours et de TP
-- Première formation à l'écosystème big data (5V, Datalake, DWH)
+- Première formation à l'écosystème big data (5V, type de données, Datalake, DWH)
 - Formation aux systèmes distribués (spark)
 
 
