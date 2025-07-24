@@ -7,6 +7,7 @@ Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Facto
 - Implémentation du back-end des ingestions Spark sur EMR avec prise de décisions architecturales
 - Mise en place d'une approche générique permettant la scalabilité sur 160 équipes
 - Réduction des coûts et du nombre d'appels par implémentation d'une sauvegarde temporaire des données sur HDFS au lieu d'un traitement direct des données sur S3
+- Migration de Datalake vers Lakehouse
 - Optimisation de tables JDBC volumineuses (>2To) avec fortes latences dues à la distance géographique (Inde), traitées en mode "annule et remplace" quotidien, par sauvegarde séquentielle en format .avro plutôt qu'en parquet pour éviter les erreurs mémoire
 - Industrialisation d'une partie des traitements sur Autoloader (outil d'ingestion Databricks)
 - Décommissionnement d'EMR au profit de Databricks
@@ -60,7 +61,7 @@ Contexte : Vacataire à l'EPISEN (École Publique d'Ingénieurs de la Santé et 
 - Première formation à l'écosystème big data (5V, types de données, Datalake, DWH) 
 - Formation et mise en pratique des systèmes distribués (Apache Spark)
 - Acculturation au streaming event-driven (Apache Kafka)
-- Introduction au data mining
+- Introduction au data mining, à des projets bout en bout data science, théorie et techniques de base de Machine Learning
 
 Compétences développées : Pédagogie, vulgarisation technique
 
@@ -93,3 +94,21 @@ Contexte : Migration du système d'information de prédiction on-premise vers Sn
 Stack technique : Snowflake, Python, Apache Spark, PostgreSQL, Docker, Jenkins, Fuzzy Logic (FuzzyWuzzy), Pandas, NumPy, Apache Airflow
 
 Équipe : 1 PO, 1 Tech Lead, 3 Data Engineers
+
+
+---- 
+## Pernod Ricard - Formateur - CDI
+Avril 2019 - Octobre 2019 (6 mois)
+
+Contexte : Formation d'équipes techniques à un projet data end-to-end via Databricks basé sur un cas d'usage concret et applicable au contexte Pernod Ricard : mise en place de prédiction de catégorie de bar pour répartir aux mieux les forces commerciales ; 
+
+- Scraping via API Google Places
+- Transformation, nettoyage des données, jointure sur données internes via Spark et sauvegarde dans datalake
+- Industrialisation de ces Notebooks via Databricks
+- Formation aux algorithmes de base de Machine Learning
+- Formation à la création, évaluation, validation et optimisation de modèles
+- Préparation de tous les supports de TP, de tous les visuels et de tous le code sous-jacent
+
+Stack technique : Databricks, DBFS, Python, Apache Spark, Scikit, Power BI
+
+Equipe : 1 Tech Lead, 1 Formateur
