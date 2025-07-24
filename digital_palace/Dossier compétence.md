@@ -1,4 +1,4 @@
-### Decathlon - Senior Data Engineer - Freelance
+## Decathlon - Senior Data Engineer - Freelance
 Mai 2021 - Présent (4 ans 3 mois)
 
 Contexte : Développement de la plateforme d'ingestion de Decathlon : Data Factory Ingest à l'échelle du groupe. Solution critique utilisée par 160 équipes à travers le monde, traitant 400 To quotidiens et 2000 tables ingérées quotidiennement.
@@ -90,6 +90,7 @@ Contexte : Migration du système d'information de prédiction on-premise vers Sn
 - Transition complète d'une architecture on-premise vers Snowflake sans interruption de service
 - Optimisation des performances par parallélisation des traitements
 - Réduction de la dette technique et modernisation des processus ETL
+- Mise en place d'une politique Role Based Access Control sur les bases 
 
 Stack technique : Snowflake, Python, Apache Spark, PostgreSQL, Docker, Jenkins, Fuzzy Logic (FuzzyWuzzy), Pandas, NumPy, Apache Airflow
 
@@ -97,18 +98,36 @@ Stack technique : Snowflake, Python, Apache Spark, PostgreSQL, Docker, Jenkins, 
 
 
 ---- 
-## Pernod Ricard - Formateur - CDI
+## Pernod Ricard - Formateur Data- CDI
 Avril 2019 - Octobre 2019 (6 mois)
 
-Contexte : Formation d'équipes techniques à un projet data end-to-end via Databricks basé sur un cas d'usage concret et applicable au contexte Pernod Ricard : mise en place de prédiction de catégorie de bar pour répartir aux mieux les forces commerciales ; 
+Contexte : Formation d'équipes techniques à un projet data end-to-end via Databricks basé sur un cas d'usage concret et applicable au contexte Pernod Ricard : mise en place de prédiction de catégorie de bar (lounge, animé, club) pas encore licencié chez Pernod-Ricard pour répartir aux mieux les forces commerciales ; 
 
 - Scraping via API Google Places
 - Transformation, nettoyage des données, jointure sur données internes via Spark et sauvegarde dans datalake
 - Industrialisation de ces Notebooks via Databricks
 - Formation aux algorithmes de base de Machine Learning
 - Formation à la création, évaluation, validation et optimisation de modèles
+- Introduction à la visualisation de données pour visualiser géographiquement les différents bars 
 - Préparation de tous les supports de TP, de tous les visuels et de tous le code sous-jacent
 
 Stack technique : Databricks, DBFS, Python, Apache Spark, Scikit, Power BI
 
 Equipe : 1 Tech Lead, 1 Formateur
+
+
+----- 
+
+## MAIF - Data Engineer - CDI
+Janvier 2019 - Janvier 2020 (1 an)
+
+
+Contexte (2 missions) : Industrialisation de projet data science jusque là cantonné à des notebooks (donc 0 ROI) + Data cleaning / extract spark + scoring du calcul d'appétence des sociétaires 
+- Transition python (pandas, scikit) vers pyspark pour pouvoir faire tourner les algo / modèles sur des volumes de données réels
+- Mise en production effective par 15 data scientists dans 4 équipes
+- Pickling, versioning des modèles + observations de data drift
+- Facilitation des propositions commerciales dans 20 agences grâce à une meilleure adéquation des produits proposés aux sociétaires
+
+Stack : PySpark, Jenkins, Docker, Zeppelin
+
+Equipe : 1 PO, 2 Data Scientists, 2 Data Engineer 

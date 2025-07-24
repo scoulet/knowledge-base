@@ -203,13 +203,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "This is a test.md",
+                "file": "Dossier compétence.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of This is a test"
+              "title": "Outline of Dossier compétence"
             }
           },
           {
@@ -223,7 +223,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -240,7 +240,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9741305b4f8cc1b4",
+  "active": "2d8536f078099cc5",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Dossier compétence.md",
