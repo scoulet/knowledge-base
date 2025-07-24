@@ -122,7 +122,7 @@ Equipe : 1 Tech Lead, 1 Formateur
 Janvier 2019 - Janvier 2020 (1 an)
 
 
-Contexte (2 missions) : Industrialisation de projet data science jusque là cantonné à des notebooks (donc 0 ROI) + Data cleaning / extract spark + scoring du calcul d'appétence des sociétaires 
+Contexte (2 missions) : 1. Industrialisation de projet data science jusque là cantonné à des notebooks (donc 0 ROI) 2. Data cleaning / extract spark + scoring du calcul d'appétence des sociétaires 
 - Transition python (pandas, scikit) vers pyspark pour pouvoir faire tourner les algo / modèles sur des volumes de données réels
 - Mise en production effective par 15 data scientists dans 4 équipes
 - Pickling, versioning des modèles + observations de data drift
@@ -131,3 +131,15 @@ Contexte (2 missions) : Industrialisation de projet data science jusque là cant
 Stack : PySpark, Jenkins, Docker, Zeppelin
 
 Equipe : 1 PO, 2 Data Scientists, 2 Data Engineer 
+
+## L'Oréal - Data Engineer - CDI
+Juin 2019 - Janvier 2020 (6 mois)
+
+Contexte : Ingestion, stockage et indexation d'images issues d'études scientifiques sur les produits de la marque
+
+- Ingestion, traitement et indexation de 300Go/jour de nouvelles photos
+- Amélioration de l'accessibilité et de la transparence concernant les bénéfices des produits pour les laboratoires grâce à une base de données d'images centralisée
+
+Stack : Java, Azure (Blob Storage, Hbase), Elasticsearch
+
+Equipe : 1 PO, 1 Tech lead, 1 Fullstack, 1 Data Engineer

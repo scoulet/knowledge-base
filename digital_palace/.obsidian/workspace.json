@@ -223,7 +223,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -240,7 +240,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d8536f078099cc5",
+  "active": "09e19175b003675e",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Dossier compétence.md",
