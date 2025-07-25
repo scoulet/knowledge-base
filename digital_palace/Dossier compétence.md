@@ -97,49 +97,59 @@ Stack technique : Snowflake, Python, Apache Spark, PostgreSQL, Docker, Jenkins, 
 Équipe : 1 PO, 1 Tech Lead, 3 Data Engineers
 
 
----- 
-## Pernod Ricard - Formateur Data- CDI
+----
+
+## Pernod Ricard - Formateur Data - CDI
 Avril 2019 - Octobre 2019 (6 mois)
 
-Contexte : Formation d'équipes techniques à un projet data end-to-end via Databricks basé sur un cas d'usage concret et applicable au contexte Pernod Ricard : mise en place de prédiction de catégorie de bar (lounge, animé, club) pas encore licencié chez Pernod-Ricard pour répartir aux mieux les forces commerciales ; 
+Contexte : Formation d'équipes techniques chez Pernod Ricard, groupe français leader mondial des vins et spiritueux. Dans le cadre de la transformation digitale du groupe et de l'adoption de nouvelles technologies data, mission de formation des équipes techniques à un projet data end-to-end via Databricks. Projet basé sur un cas d'usage concret et stratégique : développement d'un modèle de prédiction de catégorie de bars (lounge, animé, club) non encore licenciés chez Pernod-Ricard pour optimiser la répartition des forces commerciales sur le terrain et identifier de nouveaux points de vente potentiels.
 
-- Scraping via API Google Places
-- Transformation, nettoyage des données, jointure sur données internes via Spark et sauvegarde dans datalake
-- Industrialisation de ces Notebooks via Databricks
+#### Conception pédagogique et formation technique
+- Développement d'un projet data complet de A à Z sur cas d'usage métier réel
 - Formation aux algorithmes de base de Machine Learning
 - Formation à la création, évaluation, validation et optimisation de modèles
-- Introduction à la visualisation de données pour visualiser géographiquement les différents bars 
-- Préparation de tous les supports de TP, de tous les visuels et de tous le code sous-jacent
+- Introduction à la visualisation de données pour visualiser géographiquement les différents bars
+- Préparation complète des supports de TP, visuels et code sous-jacent
 
-Stack technique : Databricks, DBFS, Python, Apache Spark, Scikit, Power BI
+#### Pipeline de données et traitement
+- Scraping via API Google Places pour collecte de données géolocalisées
+- Transformation, nettoyage des données et jointure sur données internes via Spark
+- Sauvegarde dans datalake et industrialisation des Notebooks via Databricks
+- Mise en place de visualisations géographiques pour aide à la décision commerciale
 
-Equipe : 1 Tech Lead, 1 Formateur
+#### Impact métier
+- Optimisation de la répartition des forces commerciales sur le terrain
+- Identification de bars potentiels non encore licenciés chez Pernod-Ricard
+- Montée en compétences des équipes techniques sur l'écosystème data moderne
 
+Stack technique : Databricks, DBFS, Python, Apache Spark, Scikit-learn, Power BI
 
------ 
+Équipe : 1 Tech Lead, 1 Formateur
+
+---- 
 
 ## MAIF - Data Engineer - CDI
 Janvier 2019 - Janvier 2020 (1 an)
 
+Contexte : Industrialisation de projets data science chez MAIF, mutuelle d'assurance française de millions de sociétaires. Problématique critique : de nombreux projets data science développés par les équipes restaient cantonnés à des notebooks expérimentaux sans passage en production, générant un ROI nul malgré des investissements importants en ressources et temps. Mission double : industrialiser ces projets pour les mettre en production et développer un système de scoring d'appétence des sociétaires pour optimiser les propositions commerciales. Enjeu stratégique : transformer les POCs data science en solutions productives générant de la valeur métier concrète pour les 20 agences du réseau.
 
-Contexte (2 missions) : 1. Industrialisation de projet data science jusque là cantonné à des notebooks (donc 0 ROI) 2. Data cleaning / extract spark + scoring du calcul d'appétence des sociétaires 
-- Transition python (pandas, scikit) vers pyspark pour pouvoir faire tourner les algo / modèles sur des volumes de données réels
-- Mise en production effective par 15 data scientists dans 4 équipes
-- Pickling, versioning des modèles + observations de data drift
-- Facilitation des propositions commerciales dans 20 agences grâce à une meilleure adéquation des produits proposés aux sociétaires
+#### Industrialisation et mise en production
+- Transition des algorithmes de Python (pandas, scikit-learn) vers PySpark pour traiter des volumes de données réels
+- Mise en production effective par 15 data scientists répartis dans 4 équipes
+- Pickling et versioning des modèles avec observations de data drift
+- Déploiement de solutions robustes et scalables en remplacement des notebooks expérimentaux
 
-Stack : PySpark, Jenkins, Docker, Zeppelin
+#### Pipeline de données et scoring
+- Développement de pipelines de data cleaning et d'extraction Spark
+- Mise en place d'un système de scoring d'appétence des sociétaires
+- Optimisation des traitements pour gérer des volumes de données en production
+- Automatisation des processus de traitement et de mise à jour des modèles
 
-Equipe : 1 PO, 2 Data Scientists, 2 Data Engineer 
+#### Impact métier et collaboration
+- Facilitation des propositions commerciales dans 20 agences
+- Amélioration de l'adéquation des produits proposés aux sociétaires
+- Collaboration étroite avec les équipes data science pour industrialiser leurs travaux
 
-## L'Oréal - Data Engineer - CDI
-Juin 2019 - Janvier 2020 (6 mois)
+Stack technique : PySpark, Jenkins, Docker, Zeppelin
 
-Contexte : Ingestion, stockage et indexation d'images issues d'études scientifiques sur les produits de la marque
-
-- Ingestion, traitement et indexation de 300Go/jour de nouvelles photos
-- Amélioration de l'accessibilité et de la transparence concernant les bénéfices des produits pour les laboratoires grâce à une base de données d'images centralisée
-
-Stack : Java, Azure (Blob Storage, Hbase), Elasticsearch
-
-Equipe : 1 PO, 1 Tech lead, 1 Fullstack, 1 Data Engineer
+Équipe : 1 PO, 2 Data Scientists, 2 Data Engineers
