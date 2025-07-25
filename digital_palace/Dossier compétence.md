@@ -153,3 +153,18 @@ Contexte : Industrialisation de projets data science chez MAIF, mutuelle d'assur
 Stack technique : PySpark, Jenkins, Docker, Zeppelin
 
 Équipe : 1 PO, 2 Data Scientists, 2 Data Engineers
+
+
+--- 
+
+## L'Oréal - Data Engineer - CDI
+Juin 2019 - Janvier 2020 (6 mois)
+
+Contexte : Ingestion, stockage et indexation d'images issues d'études scientifiques sur les produits de la marque
+
+- Ingestion, traitement et indexation de 300Go/jour de données non-structurées
+- Amélioration de l'accessibilité et de la transparence concernant les bénéfices des produits pour les laboratoires grâce à une base de données d'images centralisée
+
+Stack technique : Java, Azure (Blob Storage, Hbase), Elasticsearch
+
+Équipe : 1 PO, 1 Tech lead, 1 Fullstack, 1 Data Engineer
