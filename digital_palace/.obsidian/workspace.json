@@ -110,14 +110,14 @@
             "id": "94a1a2ff36d69186",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "digital_palace/Dossier compétence.md",
-                "bFile": "digital_palace/Dossier compétence.md",
-                "aRef": ""
+                "file": "Dossier compétence.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Dossier compétence"
+              "icon": "lucide-file",
+              "title": "Dossier compétence"
             }
           }
         ],
@@ -259,13 +259,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Dossier compétence.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of conflict-files-obsidian-git"
+              "title": "Outline of Dossier compétence"
             }
           },
           {
@@ -296,7 +296,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09e19175b003675e",
+  "active": "94a1a2ff36d69186",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Dossier compétence.md",
