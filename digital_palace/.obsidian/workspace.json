@@ -112,12 +112,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation.md",
+                "file": "Dossier compétence.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation"
+              "title": "Dossier compétence"
             }
           }
         ],
@@ -259,13 +259,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation.md",
+                "file": "Dossier compétence.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation"
+              "title": "Outline of Dossier compétence"
             }
           },
           {
@@ -298,8 +298,8 @@
   },
   "active": "94a1a2ff36d69186",
   "lastOpenFiles": [
-    "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
     "TIL/2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation.md",
+    "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
     "Dossier compétence.md",
     "conflict-files-obsidian-git.md",
     "Troubleshooting/2025-07-18 For input string \"5s\".md",
