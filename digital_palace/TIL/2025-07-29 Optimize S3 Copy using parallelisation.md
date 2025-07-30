@@ -1,13 +1,13 @@
-"""
-🎯 Problem / Context
+
+## 🎯 Problem / Context
 
     When dealing with large-scale data transfer between two S3 locations (e.g., in a data pipeline or migration task), you might want to copy a list of specific files in parallel to improve throughput. This snippet shows how to do it using the AWS SDK's TransferManager and manual parallelization via ForkJoinPool.
 
-🐛 Common Pitfall (optional)
+## 🐛 Common Pitfall (optional)
 
     A naive implementation might loop over files sequentially or rely entirely on AWS CLI or s3-dist-cp without fine-grained control, leading to suboptimal performance or lack of flexibility in filtering which files to copy.
 
-💡 Solution / Snippet (if code is involved)
+## 💡 Solution / Snippet (if code is involved)
 
     Here's a Python-inspired pseudocode of the approach:
 
@@ -33,18 +33,18 @@
                 )
     ```
 
-🔍 Why It Works
+## 🔍 Why It Works
 
     Manual parallelization using thread pools (in Scala: `ForkJoinPool`, in Python: `ThreadPoolExecutor`) gives more explicit control over concurrency compared to AWS built-in tools. The AWS SDK's `TransferManager` internally handles multipart uploads, which are more efficient for large files.
 
-🛠️ When to Use It
+## 🛠️ When to Use It
 
     - When copying a predefined list of files between S3 buckets.
     - When `s3-dist-cp` is too heavyweight or too generic.
     - When more control is needed over concurrency or error handling.
     - When running inside a Spark job or application that needs custom orchestration.
 
-🧠 Key Ideas to Remember
+## 🧠 Key Ideas to Remember
 
     (Manual parallelization provides flexibility over concurrency settings.)
 
@@ -52,7 +52,7 @@
 
     (You can optimize throughput by tuning thread pool size and multipart threshold.)
 
-📝 Sources (optional)
+## 📝 Sources (optional)
 
     - [AWS Java SDK TransferManager Docs](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/transfermanager.html)
     - [boto3 S3 copy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy)
