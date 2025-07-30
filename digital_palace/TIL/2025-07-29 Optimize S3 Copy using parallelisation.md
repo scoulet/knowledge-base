@@ -1,12 +1,10 @@
 
 ## 🎯 Problem / Context  
-> What was the technical or business need? In what situation did this arise?
 
 When copying many files between two S3 buckets (e.g., during data migration, replication, or staging workflows), using standard tools like `s3-dist-cp` can be slow or overly rigid. In a Spark job, we needed more granular control, better logging, and flexible parallelization for a selective list of files.  
 The goal was to optimize throughput and take advantage of AWS S3’s multipart capabilities — without launching a full EMR cluster just for `s3-dist-cp`.
 
 ## 🐛 Common Pitfall  
-> What common mistake or limitation does this solve?
 
 - **s3-dist-cp** requires an EMR cluster and copies entire directories/prefixes.
 - Lacks control over concurrency granularity.
@@ -14,7 +12,6 @@ The goal was to optimize throughput and take advantage of AWS S3’s multipart c
 - Doesn't expose low-level retries, logging, or file-specific error handling.
 
 ## 💡 Solution / Snippet  
-> Show the solution in action with minimal code.
 
 In **Scala**, the solution uses:
 - `TransferManager` from AWS SDK
