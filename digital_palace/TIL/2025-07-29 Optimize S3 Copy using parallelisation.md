@@ -1,7 +1,7 @@
 
 ## 🎯 Problem / Context
 
-    When dealing with large-scale data transfer between two S3 locations (e.g., in a data pipeline or migration task), you might want to copy a list of specific files in parallel to improve throughput. This snippet shows how to do it using the AWS SDK's TransferManager and manual parallelization via ForkJoinPool.
+When dealing with large-scale data transfer between two S3 locations (e.g., in a data pipeline or migration task), you might want to copy a list of specific files in parallel to improve throughput. This snippet shows how to do it using the AWS SDK's TransferManager and manual parallelization via ForkJoinPool.
 
 ## 🐛 Common Pitfall (optional)
 
