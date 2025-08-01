@@ -88,11 +88,13 @@ def parallel_copy(source_bucket, dest_bucket, source_prefix, dest_prefix, files,
 
 ## 📝 What to add to make this an article
 
-- Benchmark vs. `s3-dist-cp` (throughput, latency, error tolerance).
-- Error handling strategies (per-file retries, exponential backoff).
-- Logging and monitoring integration (e.g., CloudWatch, custom logs).
-- Autoscaling concurrency based on file size or S3 throttling limits.
-- Cost and performance trade-offs.
+- 📊 **Benchmark and Metrics Are a Must**: Since this is a performance-focused topic, you need hard numbers. Compare your custom solution with `s3-dist-cp` on a concrete dataset (e.g., 1,000 files totaling 100 GB). Show metrics like total transfer time, cost (EMR cluster vs standalone compute), and memory footprint.
+- 📈 **Visualization Ideas**: Include a plot showing throughput (MB/s) on the Y-axis versus number of workers on the X-axis. Overlay performance of your custom copy function versus `s3-dist-cp` to illustrate scaling efficiency.
+- ❓ **When Is `s3-dist-cp` Still Relevant?**: Discuss the situations where `s3-dist-cp` remains a solid choice — for example, large-scale full-prefix transfers within EMR-based workflows. Does it still have a place in your day-to-day work?
+- 🧪 **From PoC to Production**: Right now, the code feels PoC-oriented and test-friendly. Have you used this approach in real production workloads? If so, how did you handle:
+  - **Exponential backoff** and retries?
+  - **Partial failures** and error handling?
+  - **Monitoring and alerting** (e.g., CloudWatch, custom logs)?
 
 ---
 
