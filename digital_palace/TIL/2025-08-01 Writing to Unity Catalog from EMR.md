@@ -1,36 +1,31 @@
+# TIL – Writing to Unity Catalog from EMR (and why it's generalizable to almost any compute with Spark Connect)
 
 ## 🎯 Problem / Context  
-We built a custom Spark-based ELT pipeline running on **AWS EMR**, which initially relied on **AWS Glue** for metadata cataloguing.  
-Now, we want to migrate to **Databricks Unity Catalog** to benefit from its advanced governance features — but **without migrating the ELT itself** from EMR to Databricks.
+We built a custom Spark-based ELT pipeline running on **AWS EMR**, which initially relied on **AWS Glue** as the metadata catalog.  
+We now want to migrate to **Databricks Unity Catalog** for centralized governance, lineage, and fine-grained access control — **without moving our compute away from EMR**.
 
-**Why Unity over Glue?**  
-- Centralized and consistent access control (RBAC)  
-- Table-level, column-level, and even row-level security  
-- Built-in data lineage and discoverability  
-- Unified across multiple workspaces and environments  
+But here’s the twist: although we illustrate the setup using EMR, **this pattern is generalizable to almost any environment — even outside Spark clusters — using Spark Connect**.
 
-Unity is deeply integrated with Databricks by default, which makes external usage (e.g., from EMR or even Docker) more complex — but not impossible with the right configuration.
+Unity is typically tied to Databricks runtimes, but if you configure Spark properly (or delegate execution to a Unity-aware server), it becomes fully decoupled from the underlying compute engine.
 
 ## 🐛 Common Pitfall  
-- Assuming Unity just replaces Glue without extra setup  
-- Forgetting required Spark config: Unity won’t work without proper `.uri`, `.token`, `.auth.type`  
-- Defaulting back to Hive metastore silently  
-- Table not created in Unity, but in EMR-local storage  
-- `saveAsTable` fails silently or creates unmanaged table outside Unity  
+- Believing Unity only works inside Databricks  
+- Using Spark outside Databricks without proper `.uri`, `.token`, `.auth.type` setup  
+- Falling back silently to Hive or Glue if Unity is not declared  
+- Forgetting that writing to Unity is a server-side operation — so it depends on *where Spark runs*, not *where the code is written*
 
 ## 💡 Solution / Snippet  
 
-### 1. Set up your SparkSession with Unity Catalog options
+### 1. SparkSession with Unity Catalog options (e.g. on EMR)
 
 ```python
 from pyspark.sql import SparkSession
 import os
 
-# These could be fetched from AWS Secrets Manager, Vault, or env vars
-unity_catalog = os.environ["UNITY_CATALOG"]
-unity_schema = os.environ["UNITY_SCHEMA"]
-unity_token = os.environ["UNITY_TOKEN"]
-unity_host = os.environ["UNITY_HOST"]  # ex: "https://<workspace>.cloud.databricks.com"
+unity_catalog = os.getenv("UNITY_CATALOG")
+unity_schema  = os.getenv("UNITY_SCHEMA")
+unity_token   = os.getenv("UNITY_TOKEN")
+unity_host    = os.getenv("UNITY_HOST")
 
 spark = SparkSession.builder \
     .appName("UnityFromEMR") \
@@ -44,9 +39,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 ```
 
-### 2. Clean overrides to disable Hive/Glue if needed
-
-EMR tends to default to Hive or Glue — override this **only if you're writing to Unity**:
+### 2. Disable default metastore if needed
 
 ```python
 spark.conf.set("spark.hadoop.hive.metastore.uris", "")
@@ -54,11 +47,9 @@ spark.conf.set("spark.sql.catalogImplementation", "in-memory")
 spark.conf.set("hive.metastore.client.factory.class", "org.apache.hadoop.hive.metastore.HiveMetaStoreClientFactory")
 ```
 
-✅ **Best practice**: wrap these overrides in a condition like `if use_unity_catalog:` to avoid messing up non-Unity pipelines.
-
 ---
 
-### 3. Save your DataFrame to Unity Catalog table
+### 3. Save to Unity table
 
 ```python
 df.write \
@@ -71,48 +62,57 @@ df.write \
     .saveAsTable(f"{unity_catalog}.{unity_schema}.{table_name}")
 ```
 
-⚠️ This will create an **external table** — ensure the corresponding **external location** is configured and associated with your Unity metastore, with correct S3 paths and permissions.
+⚠️ This will create an **external table** — ensure the external location is configured in Unity and mapped to your S3 path.
+
+---
+
+## 🔁 Generalizing with Spark Connect
+
+While the example uses EMR directly, **this setup can be generalized to any environment that:**
+
+1. **Runs Spark** (or connects to a Spark server)
+2. **Has access to Unity Catalog API** via `.uri`, `.token`, and `.auth.type`
+3. **Uses Spark 3.4+ and Delta 3.2+** (to support Unity-compatible Spark Connect)
+4. **Delegates execution to a Unity-enabled Spark backend**
+
+Thanks to **Spark Connect**, you can now:
+- Write to Unity from **a FastAPI app**, **a CLI script**, or **a CI/CD runner**
+- Run the logic on **remote Spark clusters** (e.g. Databricks, K8s, or EMR)
+- Separate business logic from execution environment completely
 
 ## 🔍 Why It Works  
-Unity Catalog requires explicit declaration of:
-- the catalog name (`spark.sql.defaultCatalog`)  
-- its URI (`.uri`)  
-- authentication (`.token` and `.auth.type`)  
+Unity doesn’t require Databricks compute — just a properly configured Spark session.  
+If you send your job to a Spark engine that knows how to speak Unity (via the right configs), you're good to go — whether from EMR, Docker, or even your local laptop via spark-connect ([[2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation]])
 
-Once this is properly injected into the SparkSession, **Unity becomes usable from any Spark engine** — including EMR or Docker.
-
-It enables:
-- Consistent governance  
-- Interoperability with other Databricks-managed resources  
-- Centralized security without forcing compute to run on Databricks  
+This decoupling:
+- Makes Unity available to non-Databricks users  
+- Unlocks governance from within any enterprise Spark job  
+- Enables hybrid architectures (Databricks + EMR + local jobs)
 
 ## 🛠️ When to Use It  
-- Migrating metadata from Glue to Unity  
-- Running Spark workloads on EMR while leveraging Unity governance  
-- Decoupling compute from catalog and security  
-- Testing Unity jobs locally or inside Docker containers  
-- Using Unity across multiple workspaces and environments  
-- Avoiding Hive/Glue limitations (like eventual consistency, lack of column ACLs)  
+- Migrating metadata from Glue to Unity while keeping EMR compute  
+- Developing on local Spark or in Docker, then deploying to Unity-aware Spark server  
+- Integrating Spark in microservices (e.g. FastAPI) via Spark Connect  
+- Decoupling governance from infrastructure for better portability  
 
 ## 🧠 Key Ideas to Remember  
-- Unity requires explicit config: `.uri`, `.token`, `.auth.type`  
-- External Spark jobs (EMR, Docker, local) can use Unity — if properly configured  
-- You’re no longer locked to the Databricks runtime for catalog and access control  
-- Unity Catalog is compute-agnostic: works with EMR, Docker, or even local Spark  
+- Unity is a server-side metastore — your SparkSession must be configured, not necessarily your code  
+- Spark Connect enables lightweight clients to interact with Unity-aware servers  
+- This approach works across EMR, Kubernetes, Docker, and even local Spark setups  
 
 ## 📝 Sources (optional)  
 - [Unity Catalog Docs](https://docs.databricks.com/data-governance/unity-catalog/index.html)  
-- [External Locations Setup](https://docs.databricks.com/data-governance/unity-catalog/manage-external-locations.html)  
-- [Delta Lake Table Docs](https://docs.delta.io/latest/delta-batch.html)  
+- [Use Unity Catalog from EMR (AWS blog)](https://aws.amazon.com/blogs/big-data/use-databricks-unity-catalog-open-apis-for-spark-workloads-on-amazon-emr/)  
+- [Spark Connect Overview](https://spark.apache.org/docs/latest/spark-connect.html)
 
 ## 📝 What to add to make this an article  
-- Visual diagram: EMR + S3 + Unity as external metastore  
-- Error-handling examples (`Access Denied`, `table not found`, etc.)  
-- Token management patterns (Vault, Secrets Manager)  
-- Side-by-side cost or governance comparison: Glue vs Unity  
-- How to integrate Unity-aware Spark jobs into Airflow pipelines  
+- Diagram: app → Spark Connect → Unity  
+- Show example with FastAPI + Spark Connect client  
+- Compare latency and security between Glue and Unity  
+- Tips for token/secret management in CI/CD  
+- Integration into data platform architecture (Airflow, Docker, etc.)
 
 ---
 
 **Tags**:  
-#spark #unitycatalog #emr #delta #databricks #governance #migration #pyspark #aws #TIL #glue #elt
+#spark #unitycatalog #emr #delta #databricks #sparkconnect #governance #pyspark #aws #TIL #metadata #elt #catalog #portable-data
