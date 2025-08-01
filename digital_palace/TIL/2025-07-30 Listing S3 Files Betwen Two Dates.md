@@ -34,12 +34,12 @@ def list_s3_files_between_dates(
     max_files: Optional[int] = None,
     verbose: bool = False
 ) -> Iterable[str]:
-    \"\"\"
+    """
     List S3 object keys in a bucket/prefix filtered by last modified date.
 
     Yields:
         str: Matching S3 object keys, streamed one by one.
-    \"\"\"
+    """
     s3 = boto3.client("s3")
     paginator = s3.get_paginator("list_objects_v2")
 
