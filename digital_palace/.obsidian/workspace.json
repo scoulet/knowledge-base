@@ -98,12 +98,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/2025-07-31  Some practices to reduce AWS networking costs (AWS CAA).md",
+                "file": "TIL/WIP 2025-08-01 How to migrate from AWS Glue to Unity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-31  Some practices to reduce AWS networking costs (AWS CAA)"
+              "title": "WIP 2025-08-01 How to migrate from AWS Glue to Unity"
             }
           }
         ],
@@ -284,8 +284,10 @@
   },
   "active": "9cdede010232bacc",
   "lastOpenFiles": [
-    "TIL/2025-07-30 Listing S3 Files Betwen Two Dates.md",
+    "Troubleshooting/2025-08-01 Make Unity Write work on EMR.md",
+    "TIL/WIP 2025-08-01 How to migrate from AWS Glue to Unity.md",
     "TIL/2025-07-31  Some practices to reduce AWS networking costs (AWS CAA).md",
+    "TIL/2025-07-30 Listing S3 Files Betwen Two Dates.md",
     "TIL/2025-07-29 Optimize S3 Copy using parallelisation.md",
     "Dossier compétence.md",
     "TIL/2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation.md",
