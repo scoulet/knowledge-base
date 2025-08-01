@@ -1,4 +1,3 @@
-# TIL – Writing to Unity Catalog from EMR (not just Databricks!)
 
 ## 🎯 Problem / Context  
 We built a custom Spark-based ELT pipeline running on **AWS EMR**, which initially relied on **AWS Glue** for metadata cataloguing.  
