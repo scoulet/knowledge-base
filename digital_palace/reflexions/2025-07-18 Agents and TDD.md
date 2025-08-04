@@ -5,3 +5,8 @@ There are many examples of huge refactors failing, where agents touch specific f
 For me, one way to provide that context is by writing **unit tests**, since they encapsulate the functional and application logic. A second argument is that all studies show LLMs perform better with **"few-shot learning"** (ref tba). If these tests are integrated, the agent should be able to make the requested new feature work while still respecting the existing unit tests.
 
 In conclusion, even if TDD has an initial cost, this cost can be very quickly offset by the enormous productivity gains offered by LLMs.
+
+
+**Tags**:  
+#reflexion #llm #agents #tdd #tests #context #codegen #software
+
