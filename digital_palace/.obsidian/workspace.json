@@ -136,12 +136,14 @@
             "id": "552c8872e5e36cae",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.12"
+                "file": "TIL/2025-08-27 DuckDB Can (Often) Replace Your Warehouse — With 2025 Reality Checks.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "icon": "lucide-file",
+              "title": "2025-08-27 DuckDB Can (Often) Replace Your Warehouse — With 2025 Reality Checks"
             }
           }
         ],
@@ -323,8 +325,9 @@
   },
   "active": "552c8872e5e36cae",
   "lastOpenFiles": [
-    "Troubleshooting/2025-08-06 how to repair databricks unity's metadatas.md",
     "TIL/2025-08-08 Why Some Databricks Delta Lake Commands Fail on Open-Source Delta Lake (`io.delta`).md",
+    "TIL/2025-08-27 DuckDB Can (Often) Replace Your Warehouse — With 2025 Reality Checks.md",
+    "Troubleshooting/2025-08-06 how to repair databricks unity's metadatas.md",
     "TIL/2025-08-07 open-source vs databricks' spark.md",
     "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
     "Troubleshooting/2025-08-05 Incompatible format detected between hive-glue and delta.md",
