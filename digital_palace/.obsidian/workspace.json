@@ -131,9 +131,21 @@
               "icon": "lucide-book-up",
               "title": "Release Notes 1.9.10"
             }
+          },
+          {
+            "id": "552c8872e5e36cae",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       },
       {
         "id": "56a391fe151dafea",
@@ -309,7 +321,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3d39e7723ad839f",
+  "active": "552c8872e5e36cae",
   "lastOpenFiles": [
     "Troubleshooting/2025-08-06 how to repair databricks unity's metadatas.md",
     "TIL/2025-08-08 Why Some Databricks Delta Lake Commands Fail on Open-Source Delta Lake (`io.delta`).md",
