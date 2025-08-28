@@ -138,12 +138,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/2025-08-27 WIP - Comment jongler entre update_date & creation_date en prenant en compte tous les cas dégénérés.md",
+                "file": "TIL/2025-08-28 Applying the Zeigarnik Effect to Coding Sessions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-27 WIP - Comment jongler entre update_date & creation_date en prenant en compte tous les cas dégénérés"
+              "title": "2025-08-28 Applying the Zeigarnik Effect to Coding Sessions"
             }
           }
         ],
@@ -325,8 +325,9 @@
   },
   "active": "552c8872e5e36cae",
   "lastOpenFiles": [
-    "Untitled.base",
     "TIL/2025-08-27 WIP - Comment jongler entre update_date & creation_date en prenant en compte tous les cas dégénérés.md",
+    "TIL/2025-08-28 Applying the Zeigarnik Effect to Coding Sessions.md",
+    "Untitled.base",
     "TIL/2025-07-31  WIP - Some practices to reduce AWS networking costs (AWS CAA).md",
     "TIL/2025-08-01 Writing to Unity Catalog from EMR.md",
     "TIL/2025-08-07 open-source vs databricks' spark.md",
