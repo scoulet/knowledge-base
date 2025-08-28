@@ -111,7 +111,15 @@ This decoupling:
 - Tips for token/secret management in CI/CD  
 - Integration into data platform architecture (Airflow, Docker, etc.)
 
+
 ---
 
 **Tags**:  
 #spark #unitycatalog #emr #delta #databricks #sparkconnect #governance #pyspark #aws #TIL #metadata #elt #catalog #portable-data
+
+
+--- 
+
+Notes : 
+- Tables managées te vendor-lock
+- Comment avoir la double écriture ? 
