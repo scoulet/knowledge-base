@@ -42,11 +42,11 @@ The Zeigarnik effect describes how **unfinished tasks are more memorable and cog
 - It works best with small, atomic next steps (≤ 5 min).  
 
 ## 🧪 Scientific Sources  
-- The Zeigarnik effect leads to stronger memory traces and greater likelihood of task resumption after interruptions [(Prentice, 1944)]([https://doi.org/10.1037/H0059614](https://doi.org/10.1037/H0059614)).  
-- Task interruption enhances intention recall and reactivation of mental plans [(Mäntylä & Sgaramella, 1997)]([https://doi.org/10.1007/BF00419767](https://doi.org/10.1007/BF00419767)).  
-- Incomplete tasks engage hippocampal and parahippocampal regions associated with goal pursuit [(Tong et al., 2015)]([https://doi.org/10.1360/n972015-00508](https://doi.org/10.1360/n972015-00508)).  
-- Unfinished tasks can maintain cognitive tension overnight and even influence dream content [(Fechner et al., 2024)](https://consensus.app/papers/the-influence-of-intentions-on-dream-content-fechner-born/7608b8d7be3c56649540c289a4cab575/?utm_source=chatgpt).  
-- The presence of unfinished goals can impair rest due to rumination, showing how powerful cognitive tension is [(Syrek et al., 2017)](https://consensus.app/papers/zeigarnik-’-s-sleepless-nights-how-unfinished-tasks-at-the-syrek-weigelt/46b2dd8262815fa49fed42d6aa785a0e/?utm_source=chatgpt).  
+- The Zeigarnik effect leads to stronger memory traces and greater likelihood of task resumption after interruptions [(Prentice, 1944)](https://doi.org/10.1037/H0059614).  
+- Task interruption enhances intention recall and reactivation of mental plans [(Mäntylä & Sgaramella, 1997)](https://doi.org/10.1007/BF00419767).  
+- Incomplete tasks engage hippocampal and parahippocampal regions associated with goal pursuit [(Tong et al., 2015)](https://doi.org/10.1360/n972015-00508).  
+- Unfinished tasks can maintain cognitive tension overnight and even influence dream content [(Fechner et al., 2024)](https://doi.org/10.1093/sleepadvances/zpae088).  
+- The presence of unfinished goals can impair rest due to rumination, showing how powerful cognitive tension is [(Syrek et al., 2017)](https://doi.org/10.1037/ocp0000031).  
 
 ## 📝 What to add to make this an article  
 - Real-world anecdotes: developers who use “leave a failing test” as a ritual.  
