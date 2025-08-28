@@ -1,4 +1,3 @@
-# TIL – Writing to Unity Catalog from EMR (and why it's generalizable to almost any compute with Spark Connect)
 
 ## 🎯 Problem / Context  
 We built a custom Spark-based ELT pipeline running on **AWS EMR**, which initially relied on **AWS Glue** as the metadata catalog.  
