@@ -20,7 +20,7 @@ Why this matters in 2025:
 ## 🔍 Reality From Benchmarks & Studies  
 - **BigQuery analysis**: 90 % of queries scan < 100 MB; 99.9th percentile < 300 GB.  
 - **Industry reflection**: “99 % of useful datasets can be queried on a single node.”  
-- **My experience**: out of **2 000+ ingestion pipelines**, < 100 required Spark/cluster infra.  
+- **My experience** : out of **2 000+ ingestion pipelines**, < 100 required Spark/cluster infra.  
 - **Rule of thumb #1 (data size):** if per-job dataset < 100 GB, DuckDB usually suffices.  
 - **Rule of thumb #2 (file count):** DuckDB handles thousands of files well, but above **~100 k–1 M files**, overhead becomes painful. Distributed systems are better at scheduling and parallelizing across file explosions.  
 
@@ -69,10 +69,11 @@ Why this matters in 2025:
 - File count is as important as dataset size when choosing between single-node and distributed systems.  
 - The ecosystem (ADBC/Flight, DuckLake, MotherDuck) is expanding the ceiling without losing simplicity.  
 
-## 📝 Sources (2025+)  
+## 📝 Sources
+- [# 99% of Data Engineers Don’t Realize DuckDB Can Replace Their Warehouse](https://medium.com/@hadiyolworld007/99-of-data-engineers-dont-realize-duckdb-can-replace-their-warehouse-595cb90eb4a5)
 - [DuckLake: SQL as a Lakehouse Format (DuckDB Blog, 27 May 2025)](https://duckdb.org/2025/05/27/ducklake.html)  
 - [Announcing DuckDB 1.3.0 (DuckDB Blog, 21 May 2025)](https://duckdb.org/2025/05/21/announcing-duckdb-130.html)  
-- [The Lost Decade of Small Data? (DuckDB Blog, 19 May 2025)](https://duckdb.org/2025/05/19/the-lost-decade-of-small-data.html)  
+- [The Lost Decade of Small Data? (DuckDB Blog, 19 May 2025)](https://duckdb.org/2025/05/19/the-lost-decade-of-small-data.html)
 - [Handling Concurrency (DuckDB Docs)](https://duckdb.org/docs/stable/connect/concurrency.html)  
 - [Larger-than-Memory Workloads (DuckDB Docs)](https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads.html)  
 - [DuckDB in Depth: How It Works and What Makes It Fast (Endjin, 30 Apr 2025)](https://endjin.com/blog/2025/04/duckdb-in-depth-how-it-works-what-makes-it-fast)  
