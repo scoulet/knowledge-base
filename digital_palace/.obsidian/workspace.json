@@ -138,12 +138,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/2025-08-01 ++ Writing to Unity Catalog from EMR (and why it's generalizable to almost any compute with Spark Connect).md",
+                "file": "TIL/2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-01 ++ Writing to Unity Catalog from EMR (and why it's generalizable to almost any compute with Spark Connect)"
+              "title": "2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation"
             }
           }
         ],
@@ -325,16 +325,16 @@
   },
   "active": "552c8872e5e36cae",
   "lastOpenFiles": [
-    "TIL/2025-07-30 Listing S3 Files Betwen Two Dates.md",
+    "TIL/2025-08-01 ++ Writing to Unity Catalog from EMR (and why it's generalizable to almost any compute with Spark Connect).md",
     "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
+    "TIL/2025-08-28 Applying the Zeigarnik Effect to Coding Sessions.md",
+    "TIL/2025-07-30 Listing S3 Files Betwen Two Dates.md",
     "TIL/2025-07-29 Optimize S3 Copy using parallelisation.md",
     "TIL/2025-07-26 Spark 4.0 - spark-connect - Remote spark without local installation.md",
     "TIL/2025-07-31  WIP - Some practices to reduce AWS networking costs (AWS CAA).md",
-    "TIL/2025-08-28 Applying the Zeigarnik Effect to Coding Sessions.md",
     "TIL/2025-08-26 DuckDB Can (Often) Replace Your Warehouse — With 2025 Reality Checks.md",
     "TIL/2025-08-27 WIP - Comment jongler entre update_date & creation_date en prenant en compte tous les cas dégénérés.md",
     "Untitled.base",
-    "TIL/2025-08-01 ++ Writing to Unity Catalog from EMR (and why it's generalizable to almost any compute with Spark Connect).md",
     "TIL/2025-08-07 open-source vs databricks' spark.md",
     "TIL/2025-08-08 Why Some Databricks Delta Lake Commands Fail on Open-Source Delta Lake (`io.delta`).md",
     "Troubleshooting/2025-08-06 how to repair databricks unity's metadatas.md",
