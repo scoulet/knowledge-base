@@ -122,4 +122,4 @@ This decoupling:
 
 Notes : 
 - Tables managées te vendor-lock
-- Comment avoir la double écriture ? 
+- On peut tourner en mode -> On veut migrer de Glue vers Unity : comment avoir la double écriture le temps de la migration ? 
