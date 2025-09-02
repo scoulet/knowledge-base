@@ -54,7 +54,8 @@ This way:
 - Auto Loader leverages **incremental file discovery** (notification services or efficient listing).  
 - Instead of producing one file per input, **optimized writes** coalesce into larger parquet files.  
 - Compaction is “continuous”: you don’t wait for a massive batch job to catch up.  
-- Downstream (silver/gold) layers consume already-compacted bronze, avoiding the small-files trap.  
+- Downstream (silver/gold) layers consume already-compacted bronze, avoiding the small-files trap. 
+- Auto Loader also maintains a **checkpoint of processed files**, ensuring that no file is missed and none is ingested twice. This reliability is critical when dealing with millions of incoming micro-files from uncontrolled producers.
 
 ## 🛠️ When to Use It  
 - Vendors push data via **Kafka Connect → cloud object store**, and you can’t tune their batching.  
