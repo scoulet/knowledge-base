@@ -1,12 +1,16 @@
 
-
 ## 🎯 Problem / Context  
-When ingesting data from external providers (often via **Kafka Connect → cloud storage**), you can end up with **millions of tiny JSON files**.  
-This creates a bottleneck:  
-- A plain `spark.read.load()` on the raw bucket can take **hours or fail completely**.  
-- Traditional ETL needs custom jobs to merge and repartition files before the data becomes usable.  
+I once had a user complaining about **missing rows in Silver data**. These rows were critical for their application — in this case, billing (!).  
+Upstream, the data producer was dumping everything through **Kafka Connect → Bronze**. To debug whether the issue came from the producer or from our ELT, we had to check the Bronze zone.  
 
-In practice, when suppliers control Kafka Connect configs, you can’t enforce proper batching. This means the raw zone (bronze) fills up with millions of micro-files. Without downstream compaction, Bronze becomes unusable — which **jeopardizes the medallion architecture itself**. If Bronze is unreadable, the Silver/Gold layers cannot exist in practice.  
+But here’s the catch:  
+- Bronze contained **terabytes split across millions of tiny files**, poorly partitioned.  
+- To answer a simple question (“is this row in Bronze?”), we had to run a massive `spark.read.load()`.  
+- Often it was **so heavy it wouldn’t finish at all**.  
+
+This meant we couldn’t even tell if the **producer was at fault** or if the **pipeline had dropped data** — putting at risk both user trust and the **medallion architecture itself**. If Bronze is unreadable, the whole Bronze → Silver → Gold flow collapses.  
+
+In practice, when suppliers control Kafka Connect configs, you can’t enforce proper batching. This means the raw zone (bronze) fills up with millions of micro-files. Without downstream compaction, Bronze becomes unusable.  
 
 ## 🐛 Common Pitfall  
 A naïve setup assumes you can always “just read everything in batch.” In reality:  
