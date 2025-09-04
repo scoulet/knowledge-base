@@ -60,7 +60,7 @@ This means:
 - [CloudChipr – Databricks Pricing Explained](https://cloudchipr.com/blog/databricks-pricing)  
 - [SyncComputing – Databricks Compute Comparison](https://synccomputing.com/databricks-compute-comparison-classic-serverless-and-sql-warehouses)  
 - [Reddit Discussion – Serverless vs SQL Warehouse](https://www.reddit.com/r/databricks/comments/1k4mbc3/serverless_compute_vs_sql_warehouse_serverless)  
-
+- [Databricks Cost Sprint: Serverless vs Classic — Who Wins the SQL Warehouse Race?](https://medium.com/@isaiasgarcialatorre/databricks-serverless-vs-classic-who-wins-the-cost-sprint-dc2503cced53)
 ## 📝 What to add to make this an article  
 - Graphs comparing **USD per Useful Minute** curves (as in Isi’s post).  
 - Concrete real-world examples: e.g. BI dashboards vs ETL pipelines.  
