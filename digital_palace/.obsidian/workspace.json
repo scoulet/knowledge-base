@@ -126,12 +126,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/2025-09-03 JDBC at Scale with Spark.md",
+                "file": "TIL/2025-09-04 Never Build Applications on a Data Lake (Keep OLTP and Analytics Separate).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-03 JDBC at Scale with Spark"
+              "title": "2025-09-04 Never Build Applications on a Data Lake (Keep OLTP and Analytics Separate)"
             }
           }
         ],
@@ -313,8 +313,9 @@
   },
   "active": "f3d39e7723ad839f",
   "lastOpenFiles": [
-    "TIL/2025-09-02 Spark Best Practices -From Chaos Engine to Reliable Tool.md",
     "TIL/2025-09-03 JDBC at Scale with Spark.md",
+    "TIL/2025-09-04 Never Build Applications on a Data Lake (Keep OLTP and Analytics Separate).md",
+    "TIL/2025-09-02 Spark Best Practices -From Chaos Engine to Reliable Tool.md",
     "TIL/2025-07-17 Deduplicating PySpark DataFrames with Nested Primary Keys.md",
     "TIL/2025-09-01 Auto Loader as a Built-in Small Files Compaction Strategy.md",
     "TIL/2025-08-29 Handling Delta Lake Concurrency- Ask the Right Questions First.md",
